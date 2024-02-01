@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bem vindo ao app de escalação de time!</h1>
+  <h2>Escalar jogador</h2>
+
+  <form id="form-add">
+    <div>
+      <label for="player-name">Informe o nome do jogador:</label>
+      <input type="text" name="player-name" id="playerName" placeholder="Jude Bellingham" required>
+    </div>
+
+    <div>
+      <label for="player-number">Informe o número do jogador: </label>
+      <input type="number" name="player-number" id="playerNumber" placeholder="10" max="99" required>
+    </div>
+
+    <div>
+      <label for="player-position">Informe a posição do jogador:</label>
+      <select name="player-position" id="playerPosition" required>
+        <option value="Gol">Goleiro</option>
+        <option value="Lat1">Lateral Direito</option>
+        <option value="Lat2">Lateral Esquerdo</option>
+        <option value="Zag">Zagueiro</option>
+        <option value="Vol">Volante</option>
+        <option value="Mei">Meia</option>
+        <option value="Ata">Atacante</option>
+      </select>
+    </div>
+
+    <button id="btn-submit" type="submit">Escalar</button>
+  </form>
+
+  <hr>
+
+  <h2>Remover jogador:</h2>
+
+  <form id="form-remove">
+    <label for="inputRemove">Número da camisa do jogador:</label>
+    <input type="number" class="input-remove" placeholder="10" id="inputRemove" max="99">
+
+    <button type="submit">Remover</button>
+  </form>
+
+  <hr>
+
+  <div id="app-content">
+    <div id="infos-cad"></div>
+    <div id="lineup">
+      <ul id="lineup-list"></ul>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

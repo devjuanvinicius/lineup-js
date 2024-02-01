@@ -1,0 +1,36 @@
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button{
+  width: 30%;
+}
+
+.div-btn{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  gap: 5px;
+}
+
+.div-btn button {
+  width: 49%;
+}
+
+.input-remove{
+  width: 30%;
+}
+
+#app-content{
+  width: 100%;
+  display: flex;
+}
+
+#infos-cad, #lineup{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
